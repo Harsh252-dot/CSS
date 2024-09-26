@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .red-list {
+            list-style-type: disc;
+            color: red;
+        }
+
+        .purple-list {
+            list-style-type: disc;
+            color: purple;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list-wrapper {
+            width: 45%;
+        }
+
+        /* Optional to separate the two lists with a line */
+        .divider {
+            border-left: 2px solid black;
+            height: 100%;
+        }
+    </style>
+    <title>List Example</title>
+</head>
+<body>
+    <div class="container">
+        <div class="list-wrapper">
+            <ul class="red-list">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+                <li>item-6</li>
+                <li>item-7</li>
+                <li>item-8</li>
+                <li>item-9</li>
+                <li>item-10</li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="list-wrapper">
+            <ul class="purple-list">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+                <li>item-6</li>
+                <li>item-7</li>
+                <li>item-8</li>
+                <li>item-9</li>
+                <li>item-10</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
