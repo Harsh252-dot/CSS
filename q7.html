@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: pink;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            transition: opacity 0.5s ease;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: limegreen;
+        }
+
+        /* When any card is hovered, other cards will fade */
+        .card:hover ~ .card,
+        .card:not(:hover) {
+            opacity: 0.3;
+        }
+
+        .card:hover {
+            opacity: 1;
+        }
+    </style>
+    <title>Hover Cards</title>
+</head>
+<body>
+
+    <h1>CARDS</h1>
+    <div class="card-container">
+        <div class="card yellow"></div>
+        <div class="card pink"></div>
+        <div class="card red"></div>
+        <div class="card green"></div>
+    </div>
+
+</body>
+</html>
